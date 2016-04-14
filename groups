@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-da34a28bf96a489227a303955edcfd18ad3b80cc       	puppet-memcached-distgit-core
-70dbabda5940e1a4b33f759f74017949219b447e        	puppet-memcached-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+70dbabda5940e1a4b33f759f74017949219b447e	puppet/puppet-memcached-distgit-ptl
+da34a28bf96a489227a303955edcfd18ad3b80cc	puppet-memcached-distgit-core
+global:Registered-Users                 	Registered Users
