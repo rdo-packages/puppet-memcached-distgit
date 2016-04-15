@@ -1,5 +1,5 @@
 [gerrit]
-host=rpmfactory.beta.rdoproject.org
+host=review.rdoproject.org
 port=29418
-project=puppet-memcached-distgit
-defaultbranch=master
+project=puppet/puppet-memcached-distgit
+defaultbranch=rpm-master
