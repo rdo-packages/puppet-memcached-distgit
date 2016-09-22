@@ -7,8 +7,8 @@
 
 
 Name:           puppet-memcached
-Version:        XXX
-Release:        XXX
+Version:        2.8.1
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage memcached via Puppet
 License:        Apache License, Version 2.0
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/memcached/
 
 
 %changelog
+* Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.8.1-1.bfa64e0.git
+- Newton update 2.8.1 (bfa64e066a709cae8bed12ff95e9d630ad50af14)
+
 
