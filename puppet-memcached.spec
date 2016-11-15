@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-memcached
-%global commit bfa64e066a709cae8bed12ff95e9d630ad50af14
+%global commit 7671b5f9dd9999948ee3916fc93a860891929275
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-memcached
 Version:        2.8.1
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Manage memcached via Puppet
 License:        Apache License, Version 2.0
 
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/memcached/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 2.8.1-2.7671b5f.git
+- Newton update 2.8.1 (7671b5f9dd9999948ee3916fc93a860891929275)
+
 * Thu Sep 22 2016 Haikel Guemar <hguemar@fedoraproject.org> - 2.8.1-1.bfa64e0.git
 - Newton update 2.8.1 (bfa64e066a709cae8bed12ff95e9d630ad50af14)
 
