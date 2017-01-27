@@ -10,7 +10,7 @@ Name:           puppet-memcached
 Version:        XXX
 Release:        XXX
 Summary:        Manage memcached via Puppet
-License:        Apache License, Version 2.0
+License:        ASL 2.0
 
 URL:            https://github.com/saz/puppet-memcached
 
