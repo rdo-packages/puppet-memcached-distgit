@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-memcached
-%global commit bfa64e066a709cae8bed12ff95e9d630ad50af14
+%global commit 1f307b897a327eb943f89edcf33d0fc7f6fc9c0e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-memcached
-Version:        XXX
-Release:        XXX
+Version:        3.4.0
+Release:        2%{?alphatag}%{?dist}
 Summary:        Manage memcached via Puppet
 License:        ASL 2.0
 
@@ -50,5 +50,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/memcached/
 
 
 %changelog
+* Tue May 05 2020 RDO <dev@lists.rdoproject.org> 3.4.0-2.1f307b8git
+- Update to post 3.4.0 (1f307b897a327eb943f89edcf33d0fc7f6fc9c0e)
+
 
 
