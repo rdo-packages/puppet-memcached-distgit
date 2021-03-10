@@ -7,8 +7,8 @@
 
 
 Name:           puppet-memcached
-Version:        3.4.0
-Release:        2%{?alphatag}%{?dist}
+Version:        6.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Manage memcached via Puppet
 License:        ASL 2.0
 
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/memcached/
 
 
 %changelog
+* Wed Mar 10 2021 RDO <dev@lists.rdoproject.org> 6.0.0-1.1f307b8git
+- Update to 6.0.0
+
 * Tue May 05 2020 RDO <dev@lists.rdoproject.org> 3.4.0-2.1f307b8git
 - Update to post 3.4.0 (1f307b897a327eb943f89edcf33d0fc7f6fc9c0e)
 
