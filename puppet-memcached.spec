@@ -1,4 +1,4 @@
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %define upstream_name puppet-memcached
 %global commit 39d052bed3a5f07889ba6a19398ec3c1fa344adb
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
@@ -7,14 +7,14 @@
 
 
 Name:           puppet-memcached
-Version:        3.7.0
-Release:        1%{?alphatag}%{?dist}
+Version:        6.0.0
+Release:        1%{?dist}
 Summary:        Manage memcached via Puppet
 License:        ASL 2.0
 
 URL:            https://github.com/saz/puppet-memcached
 
-Source0:        https://github.com/saz/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/saz/%{upstream_name}/archive/v%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/memcached/
 
 
 %changelog
+* Wed Mar 10 2021 RDO <dev@lists.rdoproject.org> 6.0.0-1
+- Update to 6.0.0
+
 * Tue Sep 29 2020 RDO <dev@lists.rdoproject.org> 3.7.0-1.39d052bgit
 - Update to post 3.7.0 (39d052bed3a5f07889ba6a19398ec3c1fa344adb)
 
