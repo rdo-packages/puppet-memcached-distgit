@@ -2,8 +2,8 @@
 %define upstream_name puppet-memcached
 
 Name:           puppet-memcached
-Version:        XXX
-Release:        XXX
+Version:        8.3.0
+Release:        1%{?dist}
 Summary:        Manage memcached via Puppet
 License:        ASL 2.0
 
@@ -45,5 +45,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/memcached/
 
 
 %changelog
+* Tue Apr 16 2024 RDO <dev@lists.rdoproject.org> 8.3.0-1
+- Update to 8.3.0
+
 
 
